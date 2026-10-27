@@ -1,0 +1,20 @@
+# Runtime logs and PID files
+logs/
+*.log
+*.pid
+
+# Source archives and unpacked build directories
+*.tar.gz
+*.tgz
+nginx-*/
+
+# Environment and local overrides
+.env
+.env.*
+
+# Editor and OS files
+.DS_Store
+*~
+*.swp
+*.swo
+
