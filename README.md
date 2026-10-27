@@ -6,7 +6,7 @@ This directory contains the Dockerfile, run script, configuration, and build set
 - [`Dockerfile`](Dockerfile): Multi-stage build producing a ~13.8MB minimal distroless image with user `ubuntu:1000`.
 - [`run.sh`](run.sh): Execution manager script supporting `start`, `stop`, `restart`, `test`, `reload`, `status`, `logs`, `cert`, and `install-hook`.
 - [`nginx.conf`](nginx.conf): Nginx main configuration file.
-- `logs/`: Shared log directory containing `access.log`, `error.log`, and `nginx.pid` (created automatically on startup).
+- `logs/`: Shared log directory containing `access.log` and `error.log` (created automatically on startup).
 
 ## Quick Start
 

@@ -62,7 +62,7 @@ start_container() {
     DOCKER_ARGS=(
         run -d
         --name "${CONTAINER_NAME}"
-        --restart unless-stopped
+        --restart always
         --read-only
         --stop-signal SIGQUIT
         --cap-add NET_BIND_SERVICE
