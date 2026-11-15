@@ -18,3 +18,8 @@ nginx-*/
 *.swp
 *.swo
 
+# Node.js and Vite build outputs
+node_modules/
+dist/
+
+

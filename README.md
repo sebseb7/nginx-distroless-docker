@@ -4,9 +4,38 @@ This directory contains the Dockerfile, run script, configuration, and build set
 
 ## Files
 - [`Dockerfile`](Dockerfile): Multi-stage build producing a ~13.8MB minimal distroless image with user `ubuntu:1000`.
-- [`run.sh`](run.sh): Execution manager script supporting `start`, `stop`, `restart`, `test`, `reload`, `status`, `logs`, `cert`, and `install-hook`.
+- [`src/cli.tsx`](src/cli.tsx): Node.js + React + Ink + Chalk + Vite CLI & interactive TUI manager.
+- [`run.sh`](run.sh): Original Bash execution manager script supporting `start`, `stop`, `restart`, `test`, `reload`, `status`, `logs`, `cert`, and `install-hook`.
 - [`nginx.conf`](nginx.conf): Nginx main configuration file.
 - `logs/`: Shared log directory containing `access.log` and `error.log` (created automatically on startup).
+
+## Node.js / React Ink / Chalk / Vite CLI & TUI
+
+### Build & Run
+```bash
+npm install
+npm run build
+
+# Launch Interactive TUI Dashboard (no args)
+npm start
+# or directly:
+./dist/cli.js
+
+# Run direct CLI subcommands
+npm start -- status
+npm start -- test
+npm start -- reload
+npm start -- start
+npm start -- stop
+npm start -- restart
+npm start -- logs
+npm start -- install-hook
+npm start -- cert example.com
+
+# Run in development mode via vite-node
+npm run dev
+npm run dev -- status
+```
 
 ## Quick Start
 
