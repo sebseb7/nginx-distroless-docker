@@ -1,4 +1,4 @@
-# Stage 1: Build Nginx 1.31.8 with specified configure flags
+# Stage 1: Build Nginx 1.31.9 with specified configure flags
 FROM debian:12-slim AS builder
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -13,8 +13,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 WORKDIR /build
 
-ARG NGINX_VERSION=1.31.8
-ARG NGINX_SHA256=0652b760b3b772d2ec17b47c2fc15d9a95e6fe35cd5b877eadc1a62d9bc75af1
+ARG NGINX_VERSION=1.31.9
+ARG NGINX_SHA256=a11c5eeee2e257f4478f0e649f84b0040787d277d2d3e5233952aa6b6dcb80ad
 
 RUN curl -fsSLO "https://nginx.org/download/nginx-${NGINX_VERSION}.tar.gz" \
  && echo "${NGINX_SHA256}  nginx-${NGINX_VERSION}.tar.gz" | sha256sum -c - \

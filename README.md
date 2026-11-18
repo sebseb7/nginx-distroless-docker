@@ -1,6 +1,6 @@
-# Nginx 1.31.8 Readonly Distroless Docker
+# Nginx 1.31.9 Readonly Distroless Docker
 
-This directory contains the Dockerfile, run script, configuration, and build setup for running Nginx 1.31.8 in a hardened, read-only Distroless container based on `gcr.io/distroless/base-debian12`.
+This directory contains the Dockerfile, run script, configuration, and build setup for running Nginx 1.31.9 in a hardened, read-only Distroless container based on `gcr.io/distroless/base-debian12`.
 
 ## Files
 - [`Dockerfile`](Dockerfile): Multi-stage build producing a ~13.8MB minimal distroless image with user `ubuntu:1000`.
@@ -41,7 +41,7 @@ npm run dev -- status
 
 ### 1. Build the Docker Image
 ```bash
-docker build -t nginx:1.31.8-distroless .
+docker build -t nginx:1.31.9-distroless .
 ```
 
 ### 2. Start the Container

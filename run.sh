@@ -5,7 +5,7 @@ set -euo pipefail
 # Configuration Variables (override via environment if needed)
 # -----------------------------------------------------------------------------
 CONTAINER_NAME="${CONTAINER_NAME:-nginx}"
-IMAGE_NAME="${IMAGE_NAME:-nginx:1.31.8-distroless}"
+IMAGE_NAME="${IMAGE_NAME:-nginx:1.31.9-distroless}"
 NETWORK_MODE="${NETWORK_MODE:-host}" # "host" enables 127.0.0.1 proxy passes; set to "bridge" to use -p
 HTTP_PORT="${HTTP_PORT:-80}"
 HTTPS_PORT="${HTTPS_PORT:-443}"

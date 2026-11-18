@@ -23,7 +23,7 @@ export function loadConfig(env: NodeJS.ProcessEnv = process.env): NginxConfig {
   const baseDir = env.BASE_DIR ?? resolve(__dirname, '..');
   return {
     containerName: env.CONTAINER_NAME ?? 'nginx',
-    imageName: env.IMAGE_NAME ?? 'nginx:1.31.8-distroless',
+    imageName: env.IMAGE_NAME ?? 'nginx:1.31.9-distroless',
     networkMode: env.NETWORK_MODE ?? 'host',
     httpPort: env.HTTP_PORT ?? '80',
     httpsPort: env.HTTPS_PORT ?? '443',
